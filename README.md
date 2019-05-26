@@ -50,7 +50,7 @@ const [renderRef, action] = useSvgDrawing()
 action.clear()
 
 // svg download
-action.dowonload()
+action.download()
 
 // undo drawing
 action.undo()
