@@ -1,0 +1,9 @@
+*.env
+node_modules
+.vscode
+template.html
+webpack.*.js
+renovate.json
+.travis.yml
+src/example
+prettier.config.js

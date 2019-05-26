@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./lib",
+    "target": "es5",
+    "module": "esnext",
+    "lib": ["es2018", "es2017", "dom"],
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "downlevelIteration": true,
+    "declaration": true,
+    "declarationDir": "./lib",
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noUnusedLocals": false,
+    "removeComments": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "plugins": [],
+    "paths": {
+      "@*": ["src*"]
+    },
+    "typeRoots": ["node_modules/@types", "./src/typings"]
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
