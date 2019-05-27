@@ -56,9 +56,9 @@ action.download()
 action.undo()
 
 // change pen config
-changePenColor('#00b')
+action.changePenColor('#00b')
 // change pen widht
-changePenWidth(Number(e.target.value))
+action.changePenWidth(10)
 
 // get svgXML
 // return SVGElement
