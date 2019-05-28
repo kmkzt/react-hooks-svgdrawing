@@ -37,9 +37,9 @@
     "release": "release-it"
   },
   "dependencies": {
-    "two.js": "0.7.0-beta.3",
-    "svg-drawing": "1.2.1",
-    "react": "16.8.6"
+    "react": "16.8.6",
+    "svg-drawing": "1.4.1",
+    "two.js": "0.7.0-beta.3"
   },
   "devDependencies": {
     "@babel/core": "7.4.5",
