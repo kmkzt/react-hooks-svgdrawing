@@ -13,8 +13,8 @@
   "main": "lib/index.min.js",
   "types": "lib/index.d.ts",
   "files": [
-    "lib/*.{js,ts}",
-    "src/*.{js,ts}"
+    "lib/**/*.{js,ts}",
+    "src/**/*.{js,ts}"
   ],
   "directories": {
     "lib": "lib",
