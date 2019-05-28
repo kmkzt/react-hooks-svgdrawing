@@ -78,7 +78,6 @@ const Example = () => {
     },
     [penMode, penWidth, changePenWidth, changePenColor, penThinnerWidth]
   )
-  // TODO: Fix Can not switch normal pen.
   const pressureChange = useCallback(
     (force: any, event: any) => {
       setPenThinnerWidth(30 - Math.floor(force * 40))
