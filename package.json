@@ -88,6 +88,7 @@
     "node-sass": "4.12.0",
     "npm-run-all": "4.1.5",
     "postcss-loader": "3.0.0",
+    "pressure": "2.1.2",
     "prettier": "1.17.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
