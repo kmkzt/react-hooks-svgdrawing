@@ -37,9 +37,11 @@
     "release": "release-it"
   },
   "dependencies": {
-    "react": "16.8.6",
     "svg-drawing": "1.5.1",
     "two.js": "0.7.0-beta.3"
+  },
+  "peerDependencies": {
+    "react": "16.8.6"
   },
   "devDependencies": {
     "@babel/core": "7.4.5",
