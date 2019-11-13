@@ -22,9 +22,9 @@
     "example": "src/example"
   },
   "repository": "github:kmkzt/react-hooks-drawing",
-  "homepage": "https://github.com/kmkzt/react-hooks-drawing",
+  "homepage": "https://github.com/kmkzt/react-hooks-svgdrawing",
   "bugs": {
-    "url": "https://github.com/kmkzt/react-hooks-drawing/issues",
+    "url": "https://github.com/kmkzt/react-hooks-svgdrawing/issues",
     "email": "info.pscreator@gmail.com"
   },
   "scripts": {
