@@ -38,9 +38,9 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     strict: 'error',
-    'check-constructor': false,
-    'no-comma-dangle': false,
-    'no-empty-interface': false,
+    'check-constructor': [0],
+    'no-comma-dangle': [0],
+    'no-empty-interface': [0],
     'no-unused-vars': [0],
     'prettier/prettier': [
       'error',
