@@ -9,6 +9,7 @@
 # production,distfile
 /build
 /dist
+/lib
 
 npm-debug.log*
 yarn-debug.log*
