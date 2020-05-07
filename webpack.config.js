@@ -1,46 +1,40 @@
-const { resolve } = require('path')
-const { smart } = require('webpack-merge')
-const devMode = process.env.NODE_ENV === 'development'
-const config = devMode
-  ? require('./webpack.dev.config')
-  : require('./webpack.prod.config')
-
-const common = {
+const eslintLoader = {
+  loader: 'eslint-loader',
+  options: {
+    failOnWarning: false
+  }
+}
+module.exports = {
   module: {
     rules: [
       {
         enforce: 'pre',
-        test: /\.(j|t)sx?$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: 'eslint-loader',
-            options: {
-              failOnWarning: true
-            }
-          }
-        ]
+        use: [eslintLoader]
       },
       {
-        test: /\.js|.jsx$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env', '@babel/preset-typescript']
-            }
-          }
-        ]
-      },
-      {
-        test: /\.ts|.tsx$/,
+        enforce: 'pre',
+        test: /\.tsx?$/,
         exclude: /node_modules/,
         use: [
           {
             loader: 'ts-loader',
             options: {
               transpileOnly: true
+            }
+          },
+          eslintLoader
+        ]
+      },
+      {
+        test: /\.[jt]sx?$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env', '@babel/preset-typescript']
             }
           }
         ]
@@ -61,11 +55,6 @@ const common = {
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
-    alias: {
-      '@': resolve(__dirname, 'src')
-    }
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json']
   }
 }
-
-module.exports = smart(common, config)

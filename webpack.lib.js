@@ -1,7 +1,11 @@
 const { resolve } = require('path')
+const { smart } = require('webpack-merge')
+const common = require('./webpack.config')
 
-const config = {
-  mode: 'production',
+const isDev = process.env.NODE_ENV !== 'production'
+
+module.exports = smart(common, {
+  mode: isDev ? 'development' : 'production',
   entry: resolve(__dirname, 'src/index.ts'),
   output: {
     filename: 'index.min.js',
@@ -9,7 +13,7 @@ const config = {
     library: 'react-hooks-svgdrawing',
     libraryTarget: 'umd'
   },
-  devtool: false,
+  devtool: isDev ? 'eval-source-map' : false,
   externals: {
     react: 'react'
   },
@@ -17,6 +21,4 @@ const config = {
   optimization: {
     minimize: true
   }
-}
-
-module.exports = config
+})

@@ -7,7 +7,7 @@ import React, {
 } from 'react'
 import { render } from 'react-dom'
 import Pressure from 'pressure'
-import { useSvgDrawing } from '../'
+import { useSvgDrawing } from '..'
 
 const getRandomInt = (max: number): number =>
   Math.floor(Math.random() * Math.floor(max))
