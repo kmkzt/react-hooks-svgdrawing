@@ -9013,12 +9013,10 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-svg-drawing@1.6.1:
-  version "1.6.1"
-  resolved "https://registry.npmjs.org/svg-drawing/-/svg-drawing-1.6.1.tgz#cd311a035e0292e40becf0759e89b20417657fe0"
-  integrity sha512-Re/7HdNYKoDwtTqOYv9rpr+Qw23ajOisanyzSm7yK2sy+rlLhAl3rf909GTx8uaT1PzANjszqALmtm1XOKGGIw==
-  dependencies:
-    two.js "0.7.0-beta.3"
+svg-drawing@1.8.6:
+  version "1.8.6"
+  resolved "https://registry.npmjs.org/svg-drawing/-/svg-drawing-1.8.6.tgz#62446806105cee0a5b1a7b98bf5f70639dee539c"
+  integrity sha512-Vx8RWUk6ilgu67+XDh0QnH2gUPbvab6NCU+bxS3oHCaquSuMl5tY1C75PBFNjgUSs4OwBHVk+cHbu1ljTeHKKw==
 
 symbol-tree@^3.2.2:
   version "3.2.2"

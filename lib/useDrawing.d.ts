@@ -1,5 +1,5 @@
 import React from 'react';
-import { SvgDrawing, DrawingOption } from 'svg-drawing/lib/SvgDrawing';
+import { SvgDrawing, DrawingOption } from 'svg-drawing';
 interface UseSvgDrawing {
     two: SvgDrawing | null;
     clear: () => void;

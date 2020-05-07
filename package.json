@@ -37,7 +37,7 @@
     "release": "release-it"
   },
   "dependencies": {
-    "svg-drawing": "1.6.1",
+    "svg-drawing": "1.8.6",
     "two.js": "0.7.0-beta.3"
   },
   "peerDependencies": {

@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useCallback, MutableRefObject } from 'react'
 import Two from 'two.js'
-import { SvgDrawing, DrawingOption } from 'svg-drawing/lib/SvgDrawing'
+import { SvgDrawing, DrawingOption } from 'svg-drawing'
 import { downloadBlob } from './utils/downloadBlob'
 
 interface UseSvgDrawing {
