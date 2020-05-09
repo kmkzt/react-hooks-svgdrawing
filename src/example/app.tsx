@@ -8,6 +8,8 @@ import React, {
 import { render } from 'react-dom'
 import Pressure from 'pressure'
 import { useSvgDrawing } from '..'
+// TODO: Add e2e tests for library file.
+// import { useSvgDrawing } from '../../lib/index.esm'
 
 const getRandomInt = (max: number): number =>
   Math.floor(Math.random() * Math.floor(max))
