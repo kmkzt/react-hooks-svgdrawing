@@ -1,5 +1,7 @@
 # react-hooks-svgdrawing
 
+[![npm version](https://badge.fury.io/js/react-hooks-svgdrawing.svg)](https://www.npmjs.com/package/react-hooks-svgdrawing) [![npm download](https://img.shields.io/npm/dt/react-hooks-svgdrawing.svg)](https://www.npmjs.com/package/react-hooks-svgdrawing)
+
 ### introduction
 
 `react-hooks-svgdrawing` is react drawing library.
