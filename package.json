@@ -41,8 +41,7 @@
     "release": "release-it"
   },
   "dependencies": {
-    "svg-drawing": "1.8.6",
-    "two.js": "0.7.0-beta.3"
+    "svg-drawing": "2.0.0-alpha.2"
   },
   "peerDependencies": {
     "react": ">=16.8.0"
@@ -72,7 +71,6 @@
     "@types/react": "16.9.2",
     "@types/react-dom": "16.9.0",
     "@types/rimraf": "2.0.2",
-    "@types/two.js": "0.7.2",
     "@types/uglifyjs-webpack-plugin": "1.1.0",
     "@types/webpack": "4.39.1",
     "@types/webpack-dev-server": "3.1.7",

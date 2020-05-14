@@ -32,9 +32,7 @@ const Example = () => {
     }
   ] = useSvgDrawing({
     penWidth: 3,
-    penColor: '#000',
-    width: 500,
-    height: 500
+    penColor: '#000'
   })
   const [randomPen, switchRandom] = useState<boolean>(false)
   const [xml, setXml] = useState('')
@@ -159,6 +157,8 @@ const Example = () => {
           <div
             ref={divRef}
             style={{
+              width: 500,
+              height: 500,
               border: '1px solid #eee',
               margin: 'auto'
             }}

@@ -1653,11 +1653,6 @@
   resolved "https://registry.npmjs.org/@types/tapable/-/tapable-1.0.5.tgz#9adbc12950582aa65ead76bffdf39fe0c27a3c02"
   integrity sha512-/gG2M/Imw7cQFp8PGvz/SwocNrmKFjFsm5Pb8HdbHkZ1K8pmuPzOX4VeVoiEecFCVf4CsN1r3/BRvx+6sNqwtQ==
 
-"@types/two.js@0.7.2":
-  version "0.7.2"
-  resolved "https://registry.npmjs.org/@types/two.js/-/two.js-0.7.2.tgz#46b1750681850ab9f910c48c4c605bec1d5d5147"
-  integrity sha512-2IR3lqfFPmfAcPtoQCbu5nob/5PjMKWsNxJcViM54QrU3Tdno3eS3u1zCDwyavHpMbY4Limh/wdAa6KHImhElg==
-
 "@types/uglify-js@*":
   version "3.9.0"
   resolved "https://registry.npmjs.org/@types/uglify-js/-/uglify-js-3.9.0.tgz#4490a140ca82aa855ad68093829e7fd6ae94ea87"
@@ -10220,10 +10215,10 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-svg-drawing@1.8.6:
-  version "1.8.6"
-  resolved "https://registry.npmjs.org/svg-drawing/-/svg-drawing-1.8.6.tgz#62446806105cee0a5b1a7b98bf5f70639dee539c"
-  integrity sha512-Vx8RWUk6ilgu67+XDh0QnH2gUPbvab6NCU+bxS3oHCaquSuMl5tY1C75PBFNjgUSs4OwBHVk+cHbu1ljTeHKKw==
+svg-drawing@2.0.0-alpha.2:
+  version "2.0.0-alpha.2"
+  resolved "https://registry.npmjs.org/svg-drawing/-/svg-drawing-2.0.0-alpha.2.tgz#ee4e2182803eb14e98ea21245dcc38e9ea6ef78a"
+  integrity sha512-kRIVyaj902eCaMIsHe82/rwVZDI8CGiV/nI2eDv+99SXFKWPI7tmVPiH66uKdEckQ99Ub6J40I3N3F0Ua207mw==
 
 symbol-tree@^3.2.2:
   version "3.2.4"
@@ -10509,11 +10504,6 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "https://registry.npmjs.org/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
   integrity sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q=
-
-two.js@0.7.0-beta.3:
-  version "0.7.0-beta.3"
-  resolved "https://registry.npmjs.org/two.js/-/two.js-0.7.0-beta.3.tgz#0edff0768fd6ed10611d01aef7d0d7bcc0c538ab"
-  integrity sha512-oPEmRGCo5c296Wn40+yTxYydwPTf1iwJY+EPdLoka5TxUkLkAUo10CkQxRZJ7VGmbShBxQRXQxS5i5/otwqGZg==
 
 type-check@~0.3.2:
   version "0.3.2"
