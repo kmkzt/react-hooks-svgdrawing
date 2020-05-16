@@ -41,7 +41,7 @@
     "release": "release-it"
   },
   "dependencies": {
-    "svg-drawing": "2.0.0-alpha.2"
+    "svg-drawing": "2.0.0-alpha.4"
   },
   "peerDependencies": {
     "react": ">=16.8.0"

@@ -10215,10 +10215,10 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-svg-drawing@2.0.0-alpha.2:
-  version "2.0.0-alpha.2"
-  resolved "https://registry.npmjs.org/svg-drawing/-/svg-drawing-2.0.0-alpha.2.tgz#ee4e2182803eb14e98ea21245dcc38e9ea6ef78a"
-  integrity sha512-kRIVyaj902eCaMIsHe82/rwVZDI8CGiV/nI2eDv+99SXFKWPI7tmVPiH66uKdEckQ99Ub6J40I3N3F0Ua207mw==
+svg-drawing@2.0.0-alpha.4:
+  version "2.0.0-alpha.4"
+  resolved "https://registry.npmjs.org/svg-drawing/-/svg-drawing-2.0.0-alpha.4.tgz#e460bc2958a3e8e53ba563c0c3bc1369b431a1ca"
+  integrity sha512-/1qdRIyZikGZFoP3JycnwrM66Zgwg8bl04NS7zzObX8Qh4B8OCPIFikqccZJRn1iuYzEvgSGo9lOGv06HcT/Hg==
 
 symbol-tree@^3.2.2:
   version "3.2.4"
