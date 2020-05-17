@@ -39,6 +39,7 @@
     "test": "npm-run-all test:*",
     "test:unit": "NODE_ENV=test jest --passWithNoTests",
     "test:type": "NODE_ENV=production tsc --noEmit",
+    "lint": "eslint ./src --ext .js,.ts,.tsx",
     "prepare": "yarn prod",
     "release": "release-it"
   },
