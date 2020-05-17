@@ -22,19 +22,18 @@ const Example = () => {
   const [
     divRef,
     {
-      two: drawingTwo,
-      clear: drawingClear,
-      undo,
+      instance,
+      changePenColor,
+      changePenWidth,
       getSvgXML,
       download,
-      changePenColor,
-      changePenWidth
+      undo,
+      clear
     }
   ] = useSvgDrawing({
     penWidth: 3,
     penColor: '#000'
   })
-  const [randomPen, switchRandom] = useState<boolean>(false)
   const [xml, setXml] = useState('')
   const [penMode, setPenMode] = useState<string>('normal')
   const [penWidth, setPenWidth] = useState<number>(5)
@@ -59,24 +58,11 @@ const Example = () => {
     },
     []
   )
-  const handleUpdatePenConfig = useCallback(
-    (e: any) => {
-      if (penMode === 'rainbow') {
-        changePenColor(getRandomColor())
-        return
-      }
-      if (penMode === 'random') {
-        changePenWidth(getRandomInt(50) + 5)
-        return
-      }
-      if (penMode == 'thinner') {
-        changePenWidth(penThinnerWidth)
-      }
-      if (penMode === 'normal') {
-        changePenWidth(penWidth)
-      }
+  const handleClickDownload = useCallback(
+    (ext: 'svg' | 'png' | 'jpg') => () => {
+      download(ext)
     },
-    [penMode, penWidth, changePenWidth, changePenColor, penThinnerWidth]
+    [download]
   )
   const pressureChange = useCallback(
     (force: any, event: any) => {
@@ -84,6 +70,23 @@ const Example = () => {
     },
     [setPenThinnerWidth]
   )
+
+  useEffect(() => {
+    if (penMode === 'normal') return
+
+    const stopId = setInterval(() => {
+      if (penMode === 'rainbow') {
+        changePenColor(getRandomColor())
+      }
+      if (penMode === 'random') {
+        changePenWidth(getRandomInt(50) + 5)
+      }
+      if (penMode == 'thinner') {
+        changePenWidth(penThinnerWidth)
+      }
+    }, (instance && instance.delay) || 20)
+    return () => clearInterval(stopId)
+  }, [penMode, changePenWidth, changePenColor, instance, penThinnerWidth])
 
   // Pressure -> https://github.com/stuyam/pressure
   useEffect(() => {
@@ -162,23 +165,23 @@ const Example = () => {
               border: '1px solid #eee',
               margin: 'auto'
             }}
-            onMouseMove={handleUpdatePenConfig}
-            onTouchMove={handleUpdatePenConfig}
             onTouchEnd={handleChangeXML}
             onMouseLeave={handleChangeXML}
           />
           <button onClick={undo}>Undo</button>
-          <button onClick={drawingClear}>Clear</button>
-          <button onClick={download}>Download SVG</button>
+          <button onClick={clear}>Clear</button>
+          <button onClick={handleClickDownload('svg')}>Download SVG</button>
+          <button onClick={handleClickDownload('png')}>Download PNG</button>
+          <button onClick={handleClickDownload('jpg')}>Download JPG</button>
+        </div>
+        <div
+          style={{
+            fontSize: '8px'
+          }}
+        >
+          {xml}
         </div>
       </div>
-      <p
-        style={{
-          fontSize: '8px'
-        }}
-      >
-        {xml}
-      </p>
     </Fragment>
   )
 }

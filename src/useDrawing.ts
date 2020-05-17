@@ -2,11 +2,15 @@ import React, { useRef, useEffect, useCallback, MutableRefObject } from 'react'
 import { SvgDrawing, DrawingOption } from 'svg-drawing'
 
 interface UseSvgDrawing {
-  two: SvgDrawing | null
+  instance: SvgDrawing | null
   clear: () => void
   undo: () => void
   changePenColor: (penColor: DrawingOption['penColor']) => void
   changePenWidth: (penwidth: DrawingOption['penWidth']) => void
+  changeFill: (penColor: DrawingOption['fill']) => void
+  changeClose: (penwidth: DrawingOption['close']) => void
+  changeDelay: (penColor: DrawingOption['delay']) => void
+  changeCurve: (penwidth: DrawingOption['curve']) => void
   getSvgXML: () => string | null
   download: (ext: 'svg' | 'png' | 'jpg') => void
 }
@@ -23,13 +27,29 @@ export const useSvgDrawing = (
     if (!drawingRef.current) return
     drawingRef.current.download(ext)
   }, [])
-  const changePenColor = useCallback((penColor: DrawingOption['penColor']) => {
-    if (!drawingRef.current || !penColor) return
-    drawingRef.current.penColor = penColor
+  const changePenColor = useCallback((param: DrawingOption['penColor']) => {
+    if (!drawingRef.current || !param) return
+    drawingRef.current.penColor = param
   }, [])
-  const changePenWidth = useCallback((penSise: DrawingOption['penWidth']) => {
+  const changeFill = useCallback((param: DrawingOption['fill']) => {
+    if (!drawingRef.current || !param) return
+    drawingRef.current.fill = param
+  }, [])
+  const changeDelay = useCallback((param: DrawingOption['delay']) => {
+    if (!drawingRef.current || !param) return
+    drawingRef.current.delay = param
+  }, [])
+  const changePenWidth = useCallback((param: DrawingOption['penWidth']) => {
     if (!drawingRef.current) return
-    drawingRef.current.penWidth = Number(penSise)
+    drawingRef.current.penWidth = Number(param)
+  }, [])
+  const changeClose = useCallback((param: DrawingOption['close']) => {
+    if (!drawingRef.current || !param) return
+    drawingRef.current.close = param
+  }, [])
+  const changeCurve = useCallback((param: DrawingOption['close']) => {
+    if (!drawingRef.current || !param) return
+    drawingRef.current.curve = param
   }, [])
   const clear = useCallback(() => {
     if (!drawingRef.current) return
@@ -50,9 +70,13 @@ export const useSvgDrawing = (
   return [
     renderRef,
     {
-      two: drawingRef.current,
+      instance: drawingRef.current,
       changePenWidth,
       changePenColor,
+      changeFill,
+      changeDelay,
+      changeClose,
+      changeCurve,
       clear,
       undo,
       getSvgXML,

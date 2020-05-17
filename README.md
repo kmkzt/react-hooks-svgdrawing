@@ -2,9 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/react-hooks-svgdrawing.svg)](https://www.npmjs.com/package/react-hooks-svgdrawing) [![npm download](https://img.shields.io/npm/dt/react-hooks-svgdrawing.svg)](https://www.npmjs.com/package/react-hooks-svgdrawing)
 
-### introduction
-
-`react-hooks-svgdrawing` is react drawing library.
+`react-hooks-svgdrawing` is React drawing library. This library is a React extension of [svg-drawing](https://github.com/kmkzt/svg-drawing)
 
 **[demo](https://kmkzt.github.io/react-hooks-svgdrawing/)**
 
@@ -16,55 +14,70 @@ yarn add react react-hooks-svgdrawing
 
 ## How to use
 
-started
+This is example.
 
 ```javascript
 import React from 'react'
 import { useSvgDrawing } from 'react-hooks-svgdrawing'
 
 const Drawing = () => {
-  const [
-    renderRef,
-    action
-  ] = useSvgDrawing()
-  return <div ref={renderRef}>
+  const [renderRef, draw] = useSvgDrawing()
+  // Drawing area will be resized to fit the rendering area
+  return <div style={{ width: 500, height: 500 }} ref={renderRef} />
 }
 ```
 
-Drawing init options.
+useSvgDrawing options.
 
 ```javascript
-const [renderRef, action] = useSvgDrawing({
+const [renderRef, draw] = useSvgDrawing({
   penWidth: 10, // pen width
-  penColor: '#e00', // pen color
-  width: 300, // drawing area width
-  height: 300 // drawing area height
+  penColor: '#e00' // pen color
+  close: true // Use close command for path. Default is false.
+  curve: false, // Use curve command for path. Default is true.
+  delay: 60, // Set how many ms to draw points every.
+  fill: ''// Set fill attribute for path. default is `none`
 })
 ```
 
 Drawing methods.
 
 ```javascript
-// action
-const [renderRef, action] = useSvgDrawing()
+const [renderRef, draw] = useSvgDrawing()
 
-// drawing all clear
-action.clear()
+// Call the SvgDrawing. Access the current settings of penWidth, penColor etc
+// Details are https://github.com/kmkzt/svg-drawing.
+console.log(draw.instance.penColor) // #333
+console.log(draw.instance.penWidth // 1
 
-// svg download
-action.download()
+// Erase all drawing.
+draw.clear()
 
-// undo drawing
-action.undo()
+// Download image.
+draw.download() // default svg download
+draw.download('svg')
+draw.download('png')
+draw.download('jpg')
 
-// change pen config
-action.changePenColor('#00b')
-// change pen widht
-action.changePenWidth(10)
+// Undo drawing.
+draw.undo()
+
+// Change pen config
+draw.changePenColor('#00b')
+// Change pen width
+draw.changePenWidth(10)
+// Change fill attribure of svg path element.
+draw.changFill('#00b')
+// Change throttle delay of  drawing
+draw.changeDelay(10)
+// Set whether to use curved comma for svg path element.
+draw.changCurve(false)
+// Set whether to use curved comma for svg path element.
+draw.changeClose(true)
 
 // get svgXML
 // return SVGElement
-console.log(action.getSvgXML()) // <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewBox="0 0 500 500"><defs></defs><g id="two-0" transform="matrix(1 0 0 1 0 0)" opacity="1"><path transform="matrix(1 0 0 1 0 0)" d="..." fill="transparent" stroke="#000" stroke-width="3" stroke-opacity="1" fill-opacity="1" class="" visibility="visible" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" id="two-1"></path></g></svg>
+console.log(draw.getSvgXML()) // <svg width="502" height="502"><path stroke-width="3" stroke="#000" fill="none" stroke-linejoin="round" stroke-linecap="round" d="M 156.671875 284.7265625 C 156.671875 286.1465625 156.671875 287.89984375 156.671875 291.83984375  ...
 ```
 
 [example code](src/example/)
