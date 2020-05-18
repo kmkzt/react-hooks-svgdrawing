@@ -23,7 +23,7 @@
     "doc": "README.md",
     "example": "src/example"
   },
-  "repository": "github:kmkzt/react-hooks-drawing",
+  "repository": "github:kmkzt/react-hooks-svgdrawing",
   "homepage": "https://github.com/kmkzt/react-hooks-svgdrawing",
   "bugs": {
     "url": "https://github.com/kmkzt/react-hooks-svgdrawing/issues",
