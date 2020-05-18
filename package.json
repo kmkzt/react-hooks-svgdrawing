@@ -1,6 +1,6 @@
 {
   "name": "react-hooks-svgdrawing",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "license": "MIT",
   "description": "React svg drawing library. This library is a React extension of svg-drawing.",
   "author": "kmkzt<info.pscreator@gmail.com>",
