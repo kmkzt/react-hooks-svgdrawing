@@ -32,8 +32,8 @@ useSvgDrawing options.
 ```javascript
 const [renderRef, draw] = useSvgDrawing({
   penWidth: 10, // pen width
-  penColor: '#e00' // pen color
-  close: true // Use close command for path. Default is false.
+  penColor: '#e00', // pen color
+  close: true, // Use close command for path. Default is false.
   curve: false, // Use curve command for path. Default is true.
   delay: 60, // Set how many ms to draw points every.
   fill: ''// Set fill attribute for path. default is `none`
@@ -48,7 +48,7 @@ const [renderRef, draw] = useSvgDrawing()
 // Call the SvgDrawing. Access the current settings of penWidth, penColor etc
 // Details are https://github.com/kmkzt/svg-drawing.
 console.log(draw.instance.penColor) // #333
-console.log(draw.instance.penWidth // 1
+console.log(draw.instance.penWidth) // 1
 
 // Erase all drawing.
 draw.clear()
