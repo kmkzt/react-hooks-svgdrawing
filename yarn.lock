@@ -1589,10 +1589,10 @@
     "@types/webpack-sources" "*"
     source-map "^0.6.0"
 
-"@types/webpack@4.41.14":
-  version "4.41.14"
-  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.41.14.tgz#39e3a429a4cc7dedaf79d0558f2912a101c9a2de"
-  integrity sha512-IRnPKux2B7Qip/cUgen5gUh68fxk9Ao0ovKkkSUNPu+6Zub30pjqk9qFG2xZQUBcpIyLte1QfiYBpyAMwuN7Pw==
+"@types/webpack@4.41.15":
+  version "4.41.15"
+  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.41.15.tgz#9395e759c26056637e716d197607f5ce16b29033"
+  integrity sha512-JP9plf6b9BkAFRV71JXaqsbritf7P14EnLYu6s6tepW5Ci0wD9EisyJpOOAdNy0fOWuPMnWAY+vUgI0pz0klOw==
   dependencies:
     "@types/anymatch" "*"
     "@types/node" "*"
