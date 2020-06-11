@@ -1,15 +1,15 @@
 {
-  "lib/index.min.js": {
+  "index.min.js": {
     "bundled": 13303,
     "minified": 13294,
     "gzipped": 4082
   },
-  "lib/index.cjs.js": {
+  "index.cjs.js": {
     "bundled": 23388,
     "minified": 14194,
     "gzipped": 4163
   },
-  "lib/index.esm.js": {
+  "index.esm.js": {
     "bundled": 22784,
     "minified": 13789,
     "gzipped": 4061,
