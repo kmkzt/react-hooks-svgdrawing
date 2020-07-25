@@ -94,7 +94,7 @@
     "prettier": "1.19.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "release-it": "13.6.5",
+    "release-it": "13.6.6",
     "resolve-url-loader": "3.1.1",
     "rimraf": "3.0.2",
     "rollup": "1.32.1",
