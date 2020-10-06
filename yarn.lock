@@ -1874,10 +1874,10 @@
   resolved "https://registry.npmjs.org/@types/node/-/node-14.0.1.tgz#5d93e0a099cd0acd5ef3d5bde3c086e1f49ff68c"
   integrity sha512-FAYBGwC+W6F9+huFIDtn43cpy7+SzG+atzRiTfdp3inUKL2hXnd4rG8hylJLIh4+hqrQy1P17kvJByE/z825hA==
 
-"@types/node@12.12.63":
-  version "12.12.63"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.63.tgz#88220b261bc95afa17d25be5daf268214c19c780"
-  integrity sha512-jRP6uNtUKAFz3Cl7zwCKW9hoRSNzuNSsQ3sLGSv5Uf+yWQvx226DF9a0Moa3HADkIp7ae/FhLwlqQzrgfg9hFg==
+"@types/node@12.12.64":
+  version "12.12.64"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.64.tgz#e3b336dc4c6ba52c6b59e3bd69a100347c20b1c0"
+  integrity sha512-UV1/ZJMC+HcP902wWdpC43cAcGu0IQk/I5bXjP2aSuCjsk3cE74mDvFrLKga7oDC170ugOAYBwfT4DSQW3akDA==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
