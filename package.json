@@ -66,7 +66,7 @@
     "@types/node": "12.12.70",
     "@types/prettier": "1.19.1",
     "@types/react": "16.9.56",
-    "@types/react-dom": "16.9.9",
+    "@types/react-dom": "16.9.10",
     "@types/rimraf": "2.0.4",
     "@types/uglifyjs-webpack-plugin": "1.1.0",
     "@types/webpack": "4.41.25",
