@@ -69,7 +69,7 @@
     "@types/react-dom": "16.9.10",
     "@types/rimraf": "2.0.4",
     "@types/uglifyjs-webpack-plugin": "1.1.0",
-    "@types/webpack": "4.41.25",
+    "@types/webpack": "4.41.26",
     "@types/webpack-dev-server": "3.11.1",
     "@types/webpack-merge": "4.1.5",
     "@typescript-eslint/eslint-plugin": "2.34.0",
