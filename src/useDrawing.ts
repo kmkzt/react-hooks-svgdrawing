@@ -13,7 +13,7 @@ interface UseSvgDrawing {
   changeCurve: (penwidth: DrawingOption['curve']) => void
   getSvgXML: () => string | null
   download: (ext: 'svg' | 'png' | 'jpg') => void
-  getDrawingBase64: () => string | undefined
+  getBase64: () => string | undefined
 }
 export const useSvgDrawing = (
   option?: Partial<DrawingOption>
