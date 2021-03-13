@@ -28,7 +28,7 @@ export const useSvgDrawing = (
     if (!drawingRef.current) return
     drawingRef.current.download(ext)
   }, [])
-  const getDrawingBase64 = useCallback(() => {
+  const getBase64 = useCallback(() => {
     if (!drawingRef.current) return
     return drawingRef.current.toBase64()
   }, [])
@@ -86,7 +86,7 @@ export const useSvgDrawing = (
       undo,
       getSvgXML,
       download,
-      getDrawingBase64
+      getBase64
     }
   ]
 }
