@@ -30,7 +30,7 @@ export const useSvgDrawing = (
   }, [])
   const getDrawingBase64 = useCallback(() => {
     if (!drawingRef.current) return
-    return drawingRef.current.getDrawingBase64()
+    return drawingRef.current.toBase64()
   }, [])
   const changePenColor = useCallback((param: DrawingOption['penColor']) => {
     if (!drawingRef.current || !param) return
