@@ -13,6 +13,7 @@ interface UseSvgDrawing {
   changeCurve: (penwidth: DrawingOption['curve']) => void
   getSvgXML: () => string | null
   download: (ext: 'svg' | 'png' | 'jpg') => void
+  getBase64: () => string | undefined
 }
 export const useSvgDrawing = (
   option?: Partial<DrawingOption>
@@ -26,6 +27,10 @@ export const useSvgDrawing = (
   const download = useCallback((ext: 'svg' | 'png' | 'jpg' = 'svg') => {
     if (!drawingRef.current) return
     drawingRef.current.download(ext)
+  }, [])
+  const getBase64 = useCallback(() => {
+    if (!drawingRef.current) return
+    return drawingRef.current.toBase64()
   }, [])
   const changePenColor = useCallback((param: DrawingOption['penColor']) => {
     if (!drawingRef.current || !param) return
@@ -80,7 +85,8 @@ export const useSvgDrawing = (
       clear,
       undo,
       getSvgXML,
-      download
+      download,
+      getBase64
     }
   ]
 }

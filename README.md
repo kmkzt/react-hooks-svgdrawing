@@ -59,6 +59,9 @@ draw.download('svg')
 draw.download('png')
 draw.download('jpg')
 
+// Get base64 string
+draw.getBase64()
+
 // Undo drawing.
 draw.undo()
 
