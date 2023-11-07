@@ -1727,10 +1727,10 @@
   dependencies:
     "@types/webpack" "*"
 
-"@types/eslint-plugin-prettier@3.1.2":
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/@types/eslint-plugin-prettier/-/eslint-plugin-prettier-3.1.2.tgz#3a169730b60e7c94aace778640ebc32726c648bd"
-  integrity sha512-+93WHgRJxdsNU+nhBJYs/o72QTVxAxrvIRDf13u0D4wLERt7Ab4Y5ezc3lh3oOSO8VUbnqdgG2m5U0AT77eFfg==
+"@types/eslint-plugin-prettier@3.1.3":
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/@types/eslint-plugin-prettier/-/eslint-plugin-prettier-3.1.3.tgz#ad98516d11fa887e41a29cd3e4ba5d60396a4356"
+  integrity sha512-Jk+lgBZM0u9ETUyqe2HvykL1j6uE7L1oEqbInWtsVHT6sP+AdwLb4ncmQBqASTS+YzYOPF6hKX0zgEhblRMjqA==
   dependencies:
     "@types/eslint" "*"
 
@@ -1799,10 +1799,10 @@
     "@types/relateurl" "*"
     "@types/uglify-js" "*"
 
-"@types/html-webpack-plugin@3.2.8":
-  version "3.2.8"
-  resolved "https://registry.yarnpkg.com/@types/html-webpack-plugin/-/html-webpack-plugin-3.2.8.tgz#3539e73b32b0961b99708296513a2279b606c793"
-  integrity sha512-2FFXqf26xTsmWiunmA0QfzB2KUo1Rb+FDtIZyHhrdjm3etnNt8Lbg/J2wL+vVDnX1+Ye8H5HhAxgBD2UgbDDQw==
+"@types/html-webpack-plugin@3.2.9":
+  version "3.2.9"
+  resolved "https://registry.yarnpkg.com/@types/html-webpack-plugin/-/html-webpack-plugin-3.2.9.tgz#9c94e8f4af5066d845b170245ec0f7bf3bda8188"
+  integrity sha512-puFExKcpqjZ27RYnRcsPLPXY+6tnBpyqVrJdLOx1NwiwCdqhyzLui8K2WVQTTUsR+0hhb2Y02Cjsdj540FlgZw==
   dependencies:
     "@types/html-minifier" "*"
     "@types/tapable" "^1"
