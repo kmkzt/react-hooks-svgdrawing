@@ -2039,10 +2039,10 @@
     "@types/webpack-sources" "*"
     source-map "^0.6.0"
 
-"@types/webpack@4.41.37":
-  version "4.41.37"
-  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.41.37.tgz#3678c30c4270566b2a8c2a3fd2baa71117dc38d1"
-  integrity sha512-oUs4nP9PJMannYwLkfT0HppaqHL890ACYAaquH1EroPAeRGeruB2NUXkBdm9AXimohWXwuq8wzbFOwu+5dJ2KQ==
+"@types/webpack@4.41.38":
+  version "4.41.38"
+  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.41.38.tgz#5a40ac81bdd052bf405e8bdcf3e1236f6db6dc26"
+  integrity sha512-oOW7E931XJU1mVfCnxCVgv8GLFL768pDO5u2Gzk82i8yTIgX6i7cntyZOkZYb/JtYM8252SN9bQp9tgkVDSsRw==
   dependencies:
     "@types/node" "*"
     "@types/tapable" "^1"
