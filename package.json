@@ -88,7 +88,7 @@
     "html-loader": "0.5.5",
     "html-webpack-plugin": "3.2.0",
     "jest": "24.9.0",
-    "npm-run-all": "4.1.5",
+    "npm-run-all2": "5.0.0",
     "pressure": "2.1.2",
     "prettier": "1.19.1",
     "react": "16.13.1",
